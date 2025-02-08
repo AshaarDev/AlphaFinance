@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&display=swap');
+
+
+.chart-container {
+    background-color: #1e1e2f;
+    border-radius: 8px;
+    padding: 10px; /* Reduce padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 600px; /* Fixed width */
+    height: 450px; /* Slightly reduced height */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .fixed-chart {
+    width: 100%;
+    height: 100%; /* Chart takes full height of container */
+    margin: 0; /* Remove any extra margins */
+    padding: 0; /* Remove any padding */
+  }
+  
+  
+  
+  .analyze-button:hover {
+    background-color: #45a049;
+  }
+  
+  .recharts-legend-wrapper {
+    display: flex;
+    justify-content: center; /* Center align the legend */
+    align-items: center;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    font-size: 14px; /* Adjust text size */
+    color: #e0e0e0; /* Slightly lighter color */
+    margin-top: 10px; /* Add space from chart */
+    gap: 15px; /* Add spacing between legend items */
+  }
+  
+  .recharts-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px; /* Spacing between icon and label */
+  }
+  
+  .recharts-legend-item .recharts-legend-icon {
+    width: 12px !important; /* Larger icon size */
+    height: 12px !important;
+    border-radius: 50%; /* Circular shape for legend icons */
+    margin-right: 5px;
+  }
+  
+  .analysis-table-container {
+    margin-top: 20px;
+    font-family: 'Source Sans 3', sans-serif;
+    text-align: left;
+    max-width: 700px; /* Set max width */
+    margin-left: auto; /* Center the table horizontally */
+    margin-right: auto; /* Center the table horizontally */
+    background-color: #252525;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+  }
+  
+
+.analysis-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: #e0e0e0;
+  color: #000000;
+  margin-top: 10px;
+}
+
+.analysis-table td {
+  padding: 3px 15px;
+  font-size: 15px;
+  border: 1px solid #000000;
+}
+
+.table-header {
+  background-color: #108044;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.analysis-title {
+    font-family: 'Source Sans 3', sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+
+

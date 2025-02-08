@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+.handlecsv-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px dashed #ffff;
+  padding: 20px;
+  padding-right: 60px;
+  padding-left: 60px;
+  text-align: center;
+  background-color: #32aa51;
+  cursor: pointer;
+  border-radius: 4px;
+  position: relative;
+  font-family: 'Open Sans', sans-serif; 
+}
+
+.handlecsv-container.dragging {
+  border-color: #007bff;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  font-size: 10px; 
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #ffff;
+  color: black;
+  border-radius: 4px;
+  border: none;
+  font-family: 'Open Sans', sans-serif; 
+  transition: 0.2s;
+}
+
+.custom-file-upload:hover {
+  background-color: #e6e6e6;
+}
+
+.custom-file-upload:active {
+    background-color: #cdcdcd;
+  }
+
+input[type="file"] {
+  display: none;
+}
+
+.main-csv-container {
+  padding: 10px;
+  background-color: #32aa51;
+  display: inline-block;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 12px;
+}
+
+.csvimage {
+    width: 30px;
+    margin-bottom: 10px;
+}

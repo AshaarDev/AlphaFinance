@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&display=swap');
+
+/* Root grid container */
+.ag-theme-alpine {
+  font-family: 'Source Sans 3', sans-serif;
+  background-color: #000000; /* Overall background */
+  color: #d4d4d4; /* Text color */
+  border: 1px solid #2f2f2f;
+
+  /* Scrollbar styling */
+  scrollbar-width: thin; /* Firefox scrollbar */
+  scrollbar-color: rgb(84, 84, 84) #2f2f2f; /* Thumb and track for dark mode */
+}
+
+.ag-theme-alpine::-webkit-scrollbar {
+  width: 8px; /* Scrollbar width */
+  height: 8px; /* Scrollbar height */
+}
+
+.ag-theme-alpine::-webkit-scrollbar-thumb {
+  background-color: rgb(102, 102, 102); /* Scrollbar thumb color */
+  border-radius: 4px;
+}
+
+.ag-theme-alpine::-webkit-scrollbar-track {
+  background-color: #2f2f2f; /* Scrollbar track color */
+}
+
+/* Header styling */
+.ag-header {
+  background-color: #2b2b2b; /* Header background */
+  color: #ffffff; /* White header text */
+  font-weight: bold; /* Bold text */
+  font-size: 12px; /* Larger header text */
+  height: 30px; /* Compact header height */
+}
+
+.ag-header-cell {
+  color: #ffffff !important; /* Force white text */
+  font-weight: bold; /* Make header text bold */
+  text-align: center;
+  border-bottom: 1px solid #3b3b3b;
+}
+
+
+/* Row styling */
+.ag-row {
+  background-color: #1e1e1e; /* Dark row background */
+  color: #d4d4d4; /* Text color */
+  height: 28px; /* Shorter row height */
+  border-bottom: 1px solid #3b3b3b; /* Subtle row separator */
+}
+
+.ag-row:nth-child(even) {
+  background-color: #262626; /* Alternate row background */
+}
+
+.ag-row:hover {
+  background-color: #343434; /* Hover effect for rows */
+  cursor: pointer;
+}
+
+/* Cells */
+.ag-cell {
+  padding: 2px 6px; /* Compact padding for cells */
+  font-size: 12px; /* Slightly smaller font size */
+  line-height: 28px; /* Vertical alignment */
+  color: #d4d4d4; /* Text color */
+}
+
+/* Cell hover effect */
+.ag-cell:hover {
+  background-color: #3b3b3b;
+}
+
+/* No rows placeholder */
+.ag-overlay-no-rows-wrapper {
+  color: #888;
+  background-color: #1e1e1e;
+}

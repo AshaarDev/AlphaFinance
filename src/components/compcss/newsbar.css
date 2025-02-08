@@ -1,0 +1,77 @@
+/* newsbar.css */
+.newsBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #2f2f2f;
+  color: #00ff7b;
+  padding: 5px 0;
+  overflow: hidden;
+  z-index: 900; /* Lower than the sidebar */
+}
+
+.newsContainer {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll 20s linear infinite; /* Adjust duration for speed */
+  will-change: transform; /* Optimize animation for performance */
+}
+
+.newsItem {
+  margin-right: 100px; /* Space between news items */
+}
+
+.news {
+  text-decoration: underline;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 13px;
+  color: #00ff7b;
+  transition: color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.news:hover {
+  color: #00c965;
+  text-decoration: underline;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+/* Smooth infinite scrolling with seamless transition */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.newsContainer::after {
+  content: ""; /* Add seamless duplication */
+  position: absolute;
+  left: 100%;
+  width: 100%;
+  background-color: inherit;
+  animation: scroll 30s linear infinite; /* Same duration for smoothness */
+}
+
+/* Optional: Scrollbar styling */
+.newsBar::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
+.newsBar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .news {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+}

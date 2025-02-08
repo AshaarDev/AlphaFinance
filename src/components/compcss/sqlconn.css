@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&display=swap');
+
+.sqlinfo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: -30px;
+  }
+
+  .databaseconn-container {
+    margin-top: -20px;
+    margin-left: -14px;
+  }
+  
+  .input-sql {
+    width: 100%;
+    padding: 7px 15px; /* More internal padding for better spacing */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+    margin-bottom: 5px;
+  }
+  
+  .input-sql:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  select {
+    width: 200px;
+    padding: 1px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-right: 10px;
+  }
+  
+  select:focus {
+    border-color: #5b7897;
+    outline: none;
+  }
+
+  .db-message {
+    color: rgb(234, 61, 61);
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .choosetable-container {
+    margin-top: -11px;
+  }
+
+  .choosetable {
+    width: 130px;
+    background-color: gray;
+    border: none;
+    font: 1em sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
+    transition: 0.2s;
+    color: white;
+  }
+  
+  .choosetable:hover {
+    transform: scale(1.02);
+    background-color: #376290;
+  }

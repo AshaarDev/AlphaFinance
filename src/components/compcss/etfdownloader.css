@@ -1,0 +1,98 @@
+.etf-downloader-container {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .search-input-container {
+    position: relative;
+    margin-bottom: 16px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px 12px;
+    padding-left: 36px;
+    background-color: #1e293b; /* Dark gray */
+    color: #ffffff;
+    border: 1px solid #374151; /* Lighter gray for border */
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #10b981; /* Teal focus border */
+    box-shadow: 0 0 5px rgba(16, 185, 129, 0.5);
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #9ca3af; /* Gray for icon */
+  }
+  
+  .etf-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 300px; /* Limit the height */
+    overflow-y: auto; /* Scrollable content */
+    padding-right: 4px; /* Space for scrollbar */
+  }
+  
+  .etf-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e293b; /* Dark gray */
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #374151; /* Lighter gray border */
+    transition: background-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .etf-item:hover {
+    background-color: #293648; /* Slightly lighter gray */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+  }
+  
+  .etf-item-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 4px;
+  }
+  
+  .etf-item-description {
+    font-size: 12px;
+    color: #9ca3af; /* Light gray */
+  }
+  
+  .download-button {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #10b981; /* Teal */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  
+  .download-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .download-button:hover:not(:disabled) {
+    background-color: #0f9d76; /* Darker teal on hover */
+    transform: scale(1.02); /* Subtle scaling effect */
+  }
+  

@@ -1,0 +1,112 @@
+.signup-container {
+  text-align: center;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.typing-text {
+  overflow: hidden;
+  border-right: 0.07em solid #00ff7f;
+  white-space: nowrap;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2.5rem;
+  color: #00ff7f;
+  text-align: center;
+  letter-spacing: 0.15em;
+  margin: 0 auto;
+  animation: typing 4s steps(var(--text-length, 40), end), blink-caret 0.75s step-end infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #00ff7f;
+  }
+}
+
+.login-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #00ff7f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: #00cc66;
+  transform: scale(1.05);
+}
+
+.login-button:active {
+  background-color: #00994d;
+  transform: scale(0.98);
+}
+
+.go-to-app-link {
+  display: block;
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #00cc66;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.logout-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-icon {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.logout-button:hover {
+  background-color: #c5362b;
+  transform: scale(1.05);
+}
+
+.logout-button:active {
+  background-color: #b0281a;
+  transform: scale(0.98);
+}
+
+.go-to-app-link:hover {
+  color: #008f4f;
+}
