@@ -56,7 +56,7 @@ function SignUpPage() {
             onError={handleError}
             className="login-button"
           />
-          <Link to="/home" className="go-to-app-link">
+          <Link to="/app" className="go-to-app-link">
             Or continue to App as Guest
           </Link>
         </>

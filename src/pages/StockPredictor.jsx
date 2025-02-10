@@ -271,9 +271,9 @@ function StockPredictor() {
             Choose File
           </button>
 
-          <button className="componentbutton" onClick={openModal}>
+          {/* <button className="componentbutton" onClick={openModal}>
             Save
-          </button>
+          </button> */}
 
           <GridComponent rowData={rowData} columnDefs={columnDefs} />
         </div>
