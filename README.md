@@ -1,3 +1,43 @@
+# AlphaFinance
+
+AlphaFinance is a full-stack web application that simulates stock price predictions for the next day. It utilizes scikit-learn for linear regression and pandas for data manipulation. The frontend is built with React.js, while the backend combines Python Flask for machine learning models and Node.js for API handling and user management.
+
+---
+
+## App Overview
+
+### Current Functionality:
+- Predicts the next day's stock price using a linear regression model from scikit-learn.
+- Fetches real-time stock data using yFinance.
+- Displays results in an interactive grid and chart format.
+- Allows users to upload CSV files for custom stock data analysis.
+- Provides the latest financial news.
+- User authentication via Google OAuth.
+
+### Tech Stack:
+- **Frontend**: React.js (Vite) with ag-grid for data visualization and Bootstrap for styling.
+- **Backend**: Python Flask (for predictions) and Node.js Express (for API handling).
+- **Machine Learning**: scikit-learn for linear regression.
+- **Data Handling**: pandas for data manipulation and yFinance for stock data.
+
+---
+
+## Future Goals
+
+### Financial Trackers:
+- Track expenses, set budgets, and monitor income trends over time.
+- Add personal finance analysis to help users meet their financial goals.
+
+### CRUD Functionality:
+- Allow users to create, update, and delete reminders for important financial events.
+- Add support for managing and tracking personal investments and savings goals.
+
+### Interactive Financial Tools:
+- Integrate more machine learning models for better stock prediction accuracy.
+- Provide deeper market insights, performance analysis, and real-time notifications.
+
+---
+
 # AlphaFinance Installation Guide
 
 This guide will walk you through the steps to set up and run the AlphaFinance project on your local machine.
@@ -89,4 +129,9 @@ cd /src
 npm run dev
 ```
 
-**All services should now be running!**
+## Contact Information
+
+If you have any questions or would like to contribute to this project, feel free to reach out:
+
+- **Name**: AshaarDev
+- **GitHub**: [AshaarDev](https://github.com/AshaarDev)
