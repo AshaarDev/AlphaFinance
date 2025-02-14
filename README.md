@@ -15,8 +15,8 @@ AlphaFinance is a full-stack web application that simulates stock price predicti
 - User authentication via Google OAuth.
 
 ### Tech Stack:
-- **Frontend**: React.js (Vite) with ag-grid for data visualization and Bootstrap for styling.
-- **Backend**: Python Flask (for predictions) and Node.js Express (for API handling).
+- **Frontend**: React.js (Vite) with ag-grid for data visualization, CSS for styling.
+- **Backend**: Python Sci-Kit Learn and Pandas (for predictions), Flask for API, and Node.js Express (for API handling).
 - **Machine Learning**: scikit-learn for linear regression.
 - **Data Handling**: pandas for data manipulation and yFinance for stock data.
 
