@@ -1,17 +1,13 @@
 import { Router } from "express";
 import pkg from "jsonwebtoken"; 
 import { OAuth2Client } from "google-auth-library";
-import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
 
 dotenv.config(); 
 
 const { sign, verify } = pkg;
-
 const router = Router();
 const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
-
-router.use(cookieParser());
 
 router.post("/google-login", async (req, res) => {
   const { token } = req.body;
@@ -31,11 +27,13 @@ router.post("/google-login", async (req, res) => {
       picture: payload.picture,
     };
 
-    const jwtToken = sign(user, process.env.JWT_SECRET, {
-      expiresIn: "1h",
-    });
+    const jwtToken = sign(user, process.env.JWT_SECRET, { expiresIn: "1h" });
 
-    res.cookie("token", jwtToken, { httpOnly: true });
+    res.cookie("token", jwtToken, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === "production",
+      sameSite: "Lax"
+    });
 
     return res.status(200).json({ message: "Login successful", user });
   } catch (error) {
@@ -54,7 +52,7 @@ router.get("/verify-token", (req, res) => {
   try {
     const decoded = verify(token, process.env.JWT_SECRET);
     res.status(200).json({ user: decoded });
-  } catch (error) {
+  } catch {
     return res.status(401).json({ message: "Invalid token" });
   }
 });
