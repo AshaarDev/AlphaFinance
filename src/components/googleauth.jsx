@@ -15,7 +15,7 @@ const LoginPage = () => {
 
     const googleToken = response.credential;
     login(googleToken)
-      .then(() => navigate("/"))
+      .then(() => navigate("/app"))
       .catch((err) => {
         console.error("Error during login:", err);
         setError("Login failed. Please try again.");
@@ -33,7 +33,7 @@ const LoginPage = () => {
       <h1>Welcome to the App</h1>
       {isLoading && <p>Logging in...</p>}
       {error && <p style={{ color: "red" }}>{error}</p>}
-      <GoogleLogin onSuccess={handleSuccess} onError={handleError} />
+      <GoogleLogin onSuccess={handleSuccess} onError={handleError} redirectUri={import.meta.env.VITE_REDIRECT_URI} />
     </div>
   );
 };
